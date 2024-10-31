@@ -1,0 +1,84 @@
+/* Основной стиль для страницы */
+body {
+  background-color: #f0e68c;
+  font-family: 'Courier New', Courier, monospace;
+  transition: background-color 0.3s, color 0.3s;
+  color: #333;
+  align-items: flex-start; /* Изменено на flex-start для корректного выравнивания */
+  justify-content: center;
+  height: auto; /* Изменено на auto для корректного отображения */
+  margin: 0;
+  padding-top: 60px; /* Отступ для navbar */
+}
+
+.navbar {
+  padding: 1rem 0;
+}
+
+.nav-link.retro-link {
+  color: #cc6f00 !important;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.nav-link:hover {
+  color: #d89a5a !important;
+}
+
+/* Максимальная ширина контейнера */
+.container {
+  width: 90%;
+  max-width: 600px;
+  border: 2px solid #cc6f00;
+  border-radius: 15px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  /*max-height: 80vh; /* Максимальная высота контейнера */
+  overflow-y: auto; /* Вертикальная прокрутка для всего контейнера */
+}
+
+/* Темная тема */
+body.dark-theme {
+  background-color: #343a40;
+  color: #333;
+}
+
+body.light-theme #results {
+  color: black;
+}
+
+body.dark-theme #results {
+  color: inherit;
+}
+
+.is-invalid {
+  border-color: red;
+}
+
+.is-invalid::placeholder {
+  color: red;
+}
+
+.btn {
+  border-radius: 5px;
+  background-color: #cc6f00;
+  color: white;
+}
+
+.btn:hover {
+  background-color: #d89a5a;
+}
+
+h2 {
+  font-size: 2rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  color: #cc6f00;
+}
+
+/* Исправленный стиль для заголовка о проекте */
+h2.text-center.retro-title { /* Исправлено на точечную нотацию */
+  font-size: 2rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  color: #cc6f00;
+  margin-bottom: 20px; /* Отступ снизу для заголовка */
+}
